@@ -1,0 +1,445 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Unit 3_L1 np array examples",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMCksrOzRDGjn0lcep/F01a",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sheli90610/Data-Analytics/blob/main/Unit_3_L1_np_array_examples.ipynb/python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1-D Arrays"
+      ],
+      "metadata": {
+        "id": "DCd2AS2CXeH4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "import numpy \n",
+        "\n",
+        "arr = numpy.array([1, 2, 3, 4, 5]) \n",
+        "\n",
+        "print(arr)\n",
+        "arr"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WugB9ZOOXDhw",
+        "outputId": "a91c59f3-e19c-487d-b768-3b96950570a4"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4 5]\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([1, 2, 3, 4, 5])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np"
+      ],
+      "metadata": {
+        "id": "AnLjzV1pVi-4"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qrg1PkQVVB-H",
+        "outputId": "c052b4a5-f374-42a2-b425-81de7c4ca763"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'numpy.ndarray'>\n",
+            "(3,)\n",
+            "<class 'numpy.ndarray'>\n",
+            "(2, 3)\n"
+          ]
+        }
+      ],
+      "source": [
+        "a = np.array([1,2,3])\n",
+        "#2D-Array\n",
+        "b = np.array([[1,2,3],[4,5,6]])\n",
+        "print(type(a))\n",
+        "print(a.shape)\n",
+        "print(type(b))\n",
+        "print(b.shape)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "np.array([1, 2, 3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ydDuLVnQWQfw",
+        "outputId": "40338308-34b9-43c8-84cf-562c48b43d1d"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([1, 2, 3])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "test=np.array([[1, 2], [3, 4]])\n",
+        "test"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AeIhYZW2Wab0",
+        "outputId": "b81c51f8-423f-4386-daca-5f99086b63e0"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[1, 2],\n",
+              "       [3, 4]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "arr = np.array([[1, 2, 3], [4, 5, 6]])\n",
+        "\n",
+        "print(arr)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i_75nfIbVg6V",
+        "outputId": "0ed3510e-2542-4ba1-e2ca-54c520a1623e"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2 3]\n",
+            " [4 5 6]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "a = np.array(42)\n",
+        "b = np.array([1, 2, 3, 4, 5])\n",
+        "c = np.array([[1, 2, 3], [4, 5, 6]])\n",
+        "d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])\n",
+        "print(a.ndim) \n",
+        "print(b.ndim) \n",
+        "print(c.ndim) \n",
+        "print(d.ndim)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fXyzyZcCX1Eo",
+        "outputId": "b2cd4d6f-d073-4429-af08-beecfd27c304"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Access Array Elements"
+      ],
+      "metadata": {
+        "id": "LhhAc3a0YD6y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "arr = np.array([1, 2, 3, 4])\n",
+        "\n",
+        "print(arr[0])\n",
+        "print(arr[3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K27ntH8FYIwN",
+        "outputId": "d4d1a99a-8fa9-46e8-cbec-3d8c6014badc"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "arr = np.array([1, 2, 3, 4])\n",
+        "\n",
+        "print(arr[2] + arr[3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X91mPYi7YTx3",
+        "outputId": "1fdc8cbc-d860-43a5-956b-c926f88e0e00"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Access 2-D Arrays"
+      ],
+      "metadata": {
+        "id": "jsZbOKCkYh2K"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])\n",
+        "\n",
+        "print('2nd element on 1st row: ', arr[0, 1])\n",
+        "print( arr[1, 1])\n",
+        "print( arr[1, 3])\n",
+        "arr"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6MJ31RrEYjX5",
+        "outputId": "f1b86fc5-80c6-408d-e30e-2c402d615eb7"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2nd element on 1st row:  2\n",
+            "7\n",
+            "9\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[ 1,  2,  3,  4,  5],\n",
+              "       [ 6,  7,  8,  9, 10]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " 10 % 3\n",
+        " "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wJYupJiQmbbG",
+        "outputId": "c9ce13e5-883b-4b39-bf46-a230386b8ab0"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a number: \"))\n",
+        "mod = num % 2\n",
+        "if mod > 0:\n",
+        "    print(\"You picked an odd number.\")\n",
+        "else:\n",
+        "    print(\"You picked an even number.\")\n",
+        "if num % 4 == 0:\n",
+        "    print(num, \"is a multiple of 4\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qIOspB5R6k-n",
+        "outputId": "7623c81c-5c37-4874-c4e2-efbf4cbdc50d"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 6\n",
+            "You picked an even number.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a number: \"))\n",
+        "mod = num % 2\n",
+        "if mod > 2:\n",
+        "   print(\"You picked an odd number.\")\n",
+        "else:\n",
+        "  print(\"You picked an even number.\")\n",
+        "if num % 4==0:\n",
+        "  print(num,\"is a multiple of 4\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Vrm3_mkQ_k3x",
+        "outputId": "3d3731b7-7e47-4d84-cadc-8fcb706ce934"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 7\n",
+            "You picked an even number.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
